@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Reservation Form</h1>
+    <form action="/submit-reservation" method="post">
+        <div class="form-group">
+            <label for="product">Choose a Product:</label>
+            <select class="form-control" id="product" name="product">
+                <!-- Demo Products -->
+                <option value="cctv">CCTV 4k 24/65gfk (R2480)</option>
+                <option value="gate-motor">Centurion Gate motor #f65sre (R55000)</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Reservation</button>
+    </form>
+</div>
+</body>
+</html>
